@@ -1,0 +1,23 @@
+//альтернатива Maven
+//системы сборки проектов
+//конфигурационный файла для открытия google их первого занятия
+//Gradle — система автоматической сборки, которую используют для упрощения работы с Java.
+// синтаксис груви
+// junit фреймворк для написания тестов
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+    testRuntimeOnly(
+            "org.junit.jupiter:junit-jupiter-engine:5.7.1")
+}
+
+test {
+    useJUnitPlatform()
+}
