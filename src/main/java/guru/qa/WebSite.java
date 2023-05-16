@@ -34,7 +34,9 @@ public class WebSite { // класс веб сайт
  // МЕТОД вызывается из ОБЪЕКТА
     // void метод ничего не возвращает
     // boolean из метода будет возвращаться тип boolean
-    void open(){
+
+    // операторы и циклы используются в МЕТОДАХ
+    void open(){ // операторы if / else
         System.out.println("Открыт");
         if(isFunnySite){
             System.out.println("веселый смайлик");
